@@ -6,6 +6,7 @@ import { STATUS } from '../../utils/status';
 import Loader from '../../components/Loader/Loader';
 import ProductList from '../../components/ProductList/ProductList';
 import { fetchAsyncSearchProduct, getSearchProducts, setSearchTerm, getSearchProductsStatus, clearSearch } from '../../store/searchSlice';
+import SocialBar from "../../components/socialBar/socialBar"
 
 const SearchPage = () => {
   const dispatch = useDispatch();
@@ -34,6 +35,7 @@ const SearchPage = () => {
   return (
     <main>
       <div className='search-content bg-whitesmoke'>
+        <SocialBar />
         <div className='container'>
           <div className='py-5'>
             <div className='title-md'>

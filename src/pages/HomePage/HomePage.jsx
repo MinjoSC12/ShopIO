@@ -7,6 +7,8 @@ import ProductList from "../../components/ProductList/ProductList";
 import { fetchAsyncProducts, getAllProducts, getAllProductsStatus } from '../../store/productSlice';
 import Loader from "../../components/Loader/Loader";
 import { STATUS } from '../../utils/status';
+import SocialBar from '../../components/socialBar/socialBar';
+import ButtScrollUp from '../../components/buttScrollUp/buttScrollUp';
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -82,6 +84,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <ButtScrollUp />
+      <SocialBar />
     </main>
   )
 }

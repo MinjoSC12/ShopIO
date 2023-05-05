@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import { getAllProductsByCategory, fetchAsyncProductsOfCategory, getCategoryProductsStatus } from '../../store/categorySlice';
 import Loader from '../../components/Loader/Loader';
 import { STATUS } from '../../utils/status';
+import SocialBar from "../../components/socialBar/socialBar"
 
 const CategoryProductPage = () => {
   const dispatch = useDispatch();
@@ -19,6 +20,7 @@ const CategoryProductPage = () => {
 
   return (
     <div className='cat-products py-5 bg-whitesmoke'>
+      <SocialBar />
       <div className='container'>
         <div className='cat-products-content'>
           <div className='title-md'>
