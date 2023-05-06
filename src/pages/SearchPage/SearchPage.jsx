@@ -22,7 +22,7 @@ const SearchPage = () => {
   if(searchTerm === "" || searchProducts.length === 0){
     return (
       <div className='container' style = {{
-        minHeight: "70vh"
+        minHeight: "82vh"
       }}>
         <div className='fw-5 text-danger py-5'>
           <h3>No se encontro el producto</h3>
@@ -34,8 +34,9 @@ const SearchPage = () => {
 
   return (
     <main>
-      <div className='search-content bg-whitesmoke'>
-        <SocialBar />
+      <div className='search-content bg-whitesmoke'style = {{
+        minHeight: "82vh"
+      }}>
         <div className='container'>
           <div className='py-5'>
             <div className='title-md'>
@@ -49,6 +50,7 @@ const SearchPage = () => {
           </div>
         </div>
       </div>
+      <SocialBar />
     </main>
   )
 }

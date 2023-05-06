@@ -20,18 +20,18 @@ const CategoryProductPage = () => {
 
   return (
     <div className='cat-products py-5 bg-whitesmoke'>
-      <SocialBar />
+      
       <div className='container'>
         <div className='cat-products-content'>
           <div className='title-md'>
             <h3>Categoria <span className='text-capitalize'>{category.replace("-", " ")}</span></h3>
           </div>
-
           {
             categoryProductsStatus === STATUS.LOADING ? <Loader /> : <ProductList products = {categoryProducts} />
           }
         </div>
       </div>
+      <SocialBar />
     </div>
   )
 }

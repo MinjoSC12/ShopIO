@@ -13,7 +13,9 @@ const CartPage = () => {
 
   if (carts.length === 0) {
     return (
-      <div className='container my-5'>
+      <div className='container my-5' style = {{
+        minHeight: "74vh"
+      }}>
         <div className='empty-cart flex justify-center align-center flex-column font-manrope'>
           <img src={shopping_cart} alt="" />
           <span className='fw-6 fs-15 text-gray'>Tu carrito está vacío</span>
